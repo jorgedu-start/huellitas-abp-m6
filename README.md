@@ -299,6 +299,18 @@ Como continuación del proyecto se podrían implementar las siguientes mejoras:
 - Permitir subir fotografías de las mascotas.
 - Publicar la aplicación en internet.
 
+
+## Control de versiones
+
+El proyecto utiliza Git y GitHub para mantener un historial organizado de los cambios realizados.
+
+La carpeta `node_modules` está excluida mediante el archivo `.gitignore`, porque contiene una gran cantidad de archivos y puede reconstruirse utilizando las dependencias declaradas en `package.json`.
+
+Después de descargar o clonar el proyecto, las dependencias se recuperan ejecutando:
+
+```bash
+npm install
+
 ## Autor
 
 **Jorge Ojeda**
