@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "15e795ea-abd0-4de2-84a4-00a986dffdaf",
+    "name": "MASCOTAS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56936192",
+    "_collection_link": "https://go.postman.co/collection/56936192-15e795ea-abd0-4de2-84a4-00a986dffdaf?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "LEER MASCOTAS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/mascotas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "mascotas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREAR MASCOTA",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "        {\r\n            \"tipoMascota\": \"Gato\",\r\n            \"raza\": \"Felino\",\r\n            \"nombre\": \"Polo\",\r\n            \"edad\": 3,\r\n            \"descripcion\": \"El polo siempre viene a la casa a hecharse\"\r\n        }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/mascotas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "mascotas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LEER MASCOTA POR ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/mascotas/5ef4421e-25fe-4682-8d12-265cc1edcb5d",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "mascotas",
+            "5ef4421e-25fe-4682-8d12-265cc1edcb5d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ELIMINAR MASCOTAS",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "        {\r\n            \"tipoMascota\": \"Gato\",\r\n            \"raza\": \"Felino\",\r\n            \"nombre\": \"Polo\",\r\n            \"edad\": 3,\r\n            \"descripcion\": \"Se cree el rey del universo. Anaranjado como el mismo\"\r\n        }"
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/mascotas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "mascotas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ACTUALIZAR MASCOTA",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "        {\r\n            \"tipoMascota\": \"Gato\",\r\n            \"raza\": \"Felino\",\r\n            \"nombre\": \"Polo\",\r\n            \"edad\": 3,\r\n            \"descripcion\": \"El polo es el más loco de la villa\"\r\n        }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/mascotas/87d1e6ab-cfc8-4969-bdb2-50df0c127ab1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "mascotas",
+            "87d1e6ab-cfc8-4969-bdb2-50df0c127ab1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.carousel-mascotas {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.carousel-mascotas .carousel-item img {
+    width: 100%;
+    height: clamp(350px, 50vh, 500px);
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-mascotas .carousel-item img {
+        height: 350px;
+    }
+}

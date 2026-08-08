@@ -1,0 +1,47 @@
+<div id="view-perfil">
+
+    <header class="py-3">
+        <h1 class="text-center">Perfil Mascota</h1>
+    </header>
+
+    <main class="container">
+
+        {{#if mascota }}
+        <section>
+            <section class="card shadow-sm mx-auto" style="max-width: 850px;">
+                <div class="row g-0">
+                    <div class="col-md-5 bg-light d-flex align-items-center justify-content-center">
+                        <span class="display-1 py-5">🐾</span>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-success mb-2">En adopción</span>
+                            <h2 class="card-title fw-bold">{{mascota.nombre}}</h2>
+                            <hr>
+
+                            <p><strong>Tipo de mascota:</strong> {{mascota.tipoMascota}}</p>
+                            <p><strong>Raza:</strong> {{mascota.raza}}</p>
+                            <p><strong>Edad:</strong> {{mascota.edad}}</p>
+                            <p><strong>Descripción:</strong> {{mascota.descripcion}}</p>
+
+                            <div class="d-flex gap-2 flex-wrap mt-4">
+                                <a href="/mascotas" class="btn btn-outline-secondary">Volver al listado</a>
+                                <a href="#" class="btn btn-primary">Quiero adoptarlo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        {{else}}
+        <section>
+            <p class="fs-2 fw-bold text-center">No existe ninguna mascota con el id: {{id}}</p>
+        </section>
+        {{/if}}
+
+
+    </main>
+
+</div>

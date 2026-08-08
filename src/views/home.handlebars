@@ -1,0 +1,66 @@
+<div id="view-home">
+
+    <header class="py-4 pb-2 text-center">
+        <h1 class="text-center">BIENVENIDA</h1>
+        <h2 class="fw-bold">Conoce a nuestras mascotas y ayúdanos a encontrarles una familia</h2>
+        <p class="text-secondary text-center">Conoce mascotas que esperan una familia y revisa sus historias</p>
+        <a href="/mascotas" class="btn btn-primary">Ver mascotas</a>
+    </header>
+
+    <main class="container">
+        <section class="container-fluid px-0 pt-2 pb-3">
+            {{!-- Incorporamos un carrusel de Mascotas desde bootstrap --}}
+            <div id="carouselMascotas" class="carousel slide carousel-mascotas" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="/img/mascotas1.jpg" class="d-block w-100" alt="Grupo de mascotas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/perrito1.jpg" class="d-block w-100" alt="Perro y gato">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/gatito1.jpg" class="d-block w-100" alt="Mascotas domésticas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/lorito1.jpg" class="d-block w-100" alt="Grupo de mascotas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/cerdito1.jpg" class="d-block w-100" alt="Perro y gato">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/perrito2.jpg" class="d-block w-100" alt="Perro y gato">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/gatito2.jpg" class="d-block w-100" alt="Mascotas domésticas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/lorito2.jpg" class="d-block w-100" alt="Grupo de mascotas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="/img/cerdito2.jpg" class="d-block w-100" alt="Perro y gato">
+                    </div>
+
+                </div>
+        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascotas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMascotas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+</div>
+</main>
+
+</div>

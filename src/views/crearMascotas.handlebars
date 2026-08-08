@@ -1,0 +1,44 @@
+<div id="view-crear-mascota">
+
+    <header class="py-3">
+        <h1 class="text-center">Crear nuevas mascotas</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <form action="/api/mascotas" method="post" id="form-crear-mascota" class="my-2">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tipoMascota" class="form-label">Tipo de mascota</label>
+                    <input type="text" class="form-control" name="tipoMascota" id="tipoMascota" required>
+                </div>
+                <div class="mb-3">
+                    <label for="raza" class="form-label">Raza</label>
+                    <input type="text" class="form-control" name="raza" id="raza" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" name="edad" id="edad" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+            <div class="alert alert-success d-none" role="alert" id="alert-success">
+                Mascota creada con éxito...
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script src="/js/crearMascota.js"></script>

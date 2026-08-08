@@ -1,0 +1,44 @@
+<div id="view-actualizar-mascota">
+
+    <header class="py-3">
+        <h1 class="text-center">Actualizar mascotas</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <form id="form-actualizar-mascota" data-id="{{mascota.id}}" class="my-2">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" value="{{mascota.nombre}}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tipoMascota" class="form-label">Tipo de mascota</label>
+                    <input type="text" class="form-control" name="tipoMascota" id="tipoMascota" value="{{mascota.tipoMascota}}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="raza" class="form-label">Raza</label>
+                    <input type="text" class="form-control" name="raza" id="raza" value="{{mascota.raza}}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" name="edad" id="edad" value="{{mascota.edad}}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" rows="3" required>{{mascota.descripcion}}</textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+            <div class="alert alert-success d-none" role="alert" id="alert-success-actualizar">
+                Mascota actualizada con éxito...
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script src="/js/actualizarMascota.js"></script>

@@ -1,0 +1,20 @@
+{
+    "mascotas": [
+        {
+            "id": "cb71bfa0-8080-4917-a632-4caaf37ee660",
+            "tipoMascota": "Perro",
+            "raza": "Bulldog",
+            "nombre": "Clemente",
+            "edad": "1",
+            "descripcion": "Perrito lindo y con mucha energía"
+        },
+        {
+            "id": "a0c910e6-fb41-481f-91be-b50c7e34ee1e",
+            "tipoMascota": "Gato",
+            "raza": "Naranja",
+            "nombre": "Polo",
+            "edad": "3",
+            "descripcion": "Gato loco que quiere apoderarse de la humanidad."
+        }
+    ]
+}

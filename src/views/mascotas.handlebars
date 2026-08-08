@@ -1,0 +1,39 @@
+<div id="view-mascotas">
+
+    <main class="container py-4">
+        <h1 class="text-center">Listado de mascotas en adopción</h1>
+        <p class="text-center text-secondary">Conoce a las mascotas que están esperando una familia.</p>
+
+        <table class="table">
+            <thead>
+                <tr>                    
+                    <th scope="col">Tipo de mascota</th>
+                    <th scope="col">Raza</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Acciones</th>              
+                </tr>
+            </thead>
+            <tbody>
+                {{#each mascotas}}
+                <tr>                    
+                    <td scope="row">{{tipoMascota}}</td>
+                    <td scope="row">{{raza}}</td>
+                    <td scope="row">{{nombre}}</td>
+                    <td scope="row">{{edad}}</td>
+                    <td scope="row">{{descripcion}}</td>
+                    <td>
+                        <a class="btn btn-info" href="/mascota/perfil/{{id}}">Ver</a>
+                        <a href="/mascotas/actualizar/{{id}}" class="btn btn-warning">Editar</a>
+                        <a class="btn btn-danger btn-eliminar-mascota" href="#" data-id="{{id}}">Eliminar</a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <div class="alert alert-success d-none mt-3" id="alert-success-eliminar" role="alert"></div>
+    </main>
+</div>
+
+<script src="/js/eliminarMascota.js"></script>
